@@ -1,0 +1,108 @@
+body {
+  background-image: url(../img/tile.jpg);
+}
+fieldset {
+  width: 33%;
+  padding: 2rem;
+  background-image: url(../img/formbg.jpg);
+}
+.taskContainer {
+  background-image: url(../img/notebg.png);
+}
+
+input{
+    margin-bottom: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20rem;
+  width: 80%;
+  font-family: "Oleo Script Swash Caps", cursive;
+  background-color: rgb(255, 194, 80);
+  margin-bottom: 1rem;
+}
+
+
+center{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#taskContainer {
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+  padding: 2rem;
+  display: grid;
+  margin-top: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#taskContainer section {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(241, 241, 105);
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+#taskContainer .fadeIn{
+
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.text_plc {
+  word-break: break-all;
+  display: flex;
+  flex-wrap: wrap;
+  height: 15rem;
+  background-color: rgb(233, 170, 45);
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow-y: auto;
+  border: solid rgb(0, 0, 0);
+}
+
+.txt_carry {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_place {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.btn_place button {
+  background: none;
+  border: none;
+  opacity: 0;
+}
+
+.btn_place button i {
+  font-size: 1rem;
+}
+
+#taskContainer section:hover button {
+  opacity: 1;
+}

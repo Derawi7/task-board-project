@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task to do</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <script defer src="js/data.js"></script>
+    <script defer src="js/index.js"></script>
+    <script defer src="js/func.js"></script>
+    
+  </head>
+  <body>
+    
+    <center>
+      <header><img src="./img/title.png"/></header>
+      <fieldset>
+        <form action="javascript:sendData()">
+          <div>
+            <input type="text" placeholder="Enter your task" id="Task" required/><br />
+            <input type="date" id="taskDate" required/><br />
+            <input type="time" id="timeTask" required/><br />
+            <input type="submit" value="addTask" />
+            <input type="reset" value="reset" />
+          </div>
+        </form>
+      </fieldset>
+      <div id="taskContainer"></div>
+    </center>
+  </body>
+</html>
